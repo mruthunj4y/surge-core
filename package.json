@@ -1,6 +1,6 @@
 {
   "name": "@surge/core",
-  "description": "ga .Core smart contracts of surge",
+  "description": "Core smart contracts of surge",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -53,6 +53,7 @@
     "typescript": "^3.7.3"
   },
   "scripts": {
+    "prepare": "hardhat compile",
     "compile": "hardhat compile",
     "test": "hardhat test"
   }
