@@ -1,0 +1,3547 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:20",
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:18",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/proxy/Proxy.sol:Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/proxy/ProxyAdmin.sol:ProxyAdmin": {
+        "src": "@openzeppelin/contracts/proxy/ProxyAdmin.sol:12",
+        "version": {
+          "withMetadata": "9bd63523af4f8dc9849da791fe4ef79467e1996c1714530c4e2ce29cae491481",
+          "withoutMetadata": "c59e3c6fb828e1ec88293d288cae99228dff57f8075e0bcefb807b8ac97d9924",
+          "linkedWithoutMetadata": "c59e3c6fb828e1ec88293d288cae99228dff57f8075e0bcefb807b8ac97d9924"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "getProxyImplementation(address)",
+          "getProxyAdmin(address)",
+          "changeProxyAdmin(address,address)",
+          "upgrade(address,address)",
+          "upgradeAndCall(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol:28",
+        "version": {
+          "withMetadata": "77e7f1ebfa0a727ce93ff4f7ce0f169ef7087bfc5a283f04d6fbd5d599c9e471",
+          "withoutMetadata": "77e7f1ebfa0a727ce93ff4f7ce0f169ef7087bfc5a283f04d6fbd5d599c9e471",
+          "linkedWithoutMetadata": "77e7f1ebfa0a727ce93ff4f7ce0f169ef7087bfc5a283f04d6fbd5d599c9e471"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/UpgradeableProxy.sol:UpgradeableProxy",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address"
+        ],
+        "methods": [
+          "(address,address,bytes)",
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol:33"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/proxy/UpgradeableProxy.sol:UpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/UpgradeableProxy.sol:17",
+        "version": {
+          "withMetadata": "2f9c28e156c36625950766a08a1af182ad5167d3b353919d1ad50d1165d4f7e3",
+          "withoutMetadata": "2f9c28e156c36625950766a08a1af182ad5167d3b353919d1ad50d1165d4f7e3",
+          "linkedWithoutMetadata": "2f9c28e156c36625950766a08a1af182ad5167d3b353919d1ad50d1165d4f7e3"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address"
+        ],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/UpgradeableProxy.sol:24"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:8",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/Factory.sol:Factory": {
+        "src": "contracts/Factory.sol:13",
+        "version": {
+          "withMetadata": "644783f2d202c4f5d086069b2987d20d516466af1376a83b77e08704fc7ffb74",
+          "withoutMetadata": "8d71300f38ee55f49ec4cb4bbafbb256d535790fd500e22ddf2364eb006f2f7d",
+          "linkedWithoutMetadata": "8d71300f38ee55f49ec4cb4bbafbb256d535790fd500e22ddf2364eb006f2f7d"
+        },
+        "inherit": [
+          "contracts/PoolDeployer.sol:PoolDeployer",
+          "contracts/interfaces/IPoolDeployer.sol:IPoolDeployer",
+          "contracts/interfaces/IFactory.sol:IFactory",
+          "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address)",
+          "createPool(address,address,uint24)",
+          "setOwner(address)",
+          "setPoolImplementation(address)",
+          "setPoolImplementationAdmin(address)",
+          "enableFeeAmount(uint24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+            },
+            {
+              "label": "parameters",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(Parameters)4069_storage",
+              "contract": "PoolDeployer",
+              "src": "contracts/PoolDeployer.sol:20"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_address",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:15"
+            },
+            {
+              "label": "PoolImplementation",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_address",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:17"
+            },
+            {
+              "label": "PoolImplementationAdmin",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_address",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:18"
+            },
+            {
+              "label": "feeAmountTickSpacing",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_uint24,t_int24)",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:21"
+            },
+            {
+              "label": "getPool",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint24,t_address)))",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:23"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "Factory",
+              "src": "contracts/Factory.sol:26"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint24,t_address)))": {
+              "label": "mapping(address => mapping(address => mapping(uint24 => address)))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_uint24,t_address))": {
+              "label": "mapping(address => mapping(uint24 => address))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint24,t_address)": {
+              "label": "mapping(uint24 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint24,t_int24)": {
+              "label": "mapping(uint24 => int24)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Parameters)4069_storage": {
+              "label": "struct PoolDeployer.Parameters",
+              "members": [
+                {
+                  "label": "factory",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "token0",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "token1",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "fee",
+                  "type": "t_uint24",
+                  "offset": 20,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickSpacing",
+                  "type": "t_int24",
+                  "offset": 23,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint24": {
+              "label": "uint24",
+              "numberOfBytes": "3"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/Pool.sol:Pool": {
+        "src": "contracts/Pool.sol:28",
+        "version": {
+          "withMetadata": "1ad62bef3308a66086e76bae1166958035c52fe434f01d9408cc81b0e818b0df",
+          "withoutMetadata": "7babc3ee20d952ef079f06fe9647f62910c0e01ec62665389b6c9ce6506871f9",
+          "linkedWithoutMetadata": "7babc3ee20d952ef079f06fe9647f62910c0e01ec62665389b6c9ce6506871f9"
+        },
+        "inherit": [
+          "contracts/interfaces/IPool.sol:IPool",
+          "contracts/interfaces/pool/IPoolEvents.sol:IPoolEvents",
+          "contracts/interfaces/pool/IPoolOwnerActions.sol:IPoolOwnerActions",
+          "contracts/interfaces/pool/IPoolActions.sol:IPoolActions",
+          "contracts/interfaces/pool/IPoolDerivedState.sol:IPoolDerivedState",
+          "contracts/interfaces/pool/IPoolState.sol:IPoolState",
+          "contracts/interfaces/pool/IPoolImmutables.sol:IPoolImmutables",
+          "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:Initializable"
+        ],
+        "libraries": [
+          "contracts/libraries/LowGasSafeMath.sol:LowGasSafeMath",
+          "contracts/libraries/SafeCast.sol:SafeCast",
+          "contracts/libraries/Tick.sol:Tick",
+          "contracts/libraries/TickBitmap.sol:TickBitmap",
+          "contracts/libraries/Position.sol:Position",
+          "contracts/libraries/Oracle.sol:Oracle",
+          "contracts/libraries/TickMath.sol:TickMath",
+          "contracts/libraries/FullMath.sol:FullMath",
+          "contracts/libraries/TransferHelper.sol:TransferHelper",
+          "contracts/libraries/SwapMath.sol:SwapMath",
+          "contracts/libraries/FixedPoint128.sol:FixedPoint128",
+          "contracts/libraries/SqrtPriceMath.sol:SqrtPriceMath",
+          "contracts/libraries/LiquidityMath.sol:LiquidityMath"
+        ],
+        "methods": [
+          "initializePool(address,address,address,uint24,int24)",
+          "snapshotCumulativesInside(int24,int24)",
+          "observe(uint32[])",
+          "increaseObservationCardinalityNext(uint16)",
+          "initialize(uint160)",
+          "mint(address,int24,int24,uint128,bytes)",
+          "collect(address,int24,int24,uint128,uint128)",
+          "burn(int24,int24,uint128)",
+          "swap(address,bool,int256,uint160,bytes)",
+          "flash(address,uint256,uint256,bytes)",
+          "setFeeProtocol(uint8,uint8)",
+          "collectProtocol(address,uint128,uint128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+            },
+            {
+              "label": "factory",
+              "offset": 2,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:39"
+            },
+            {
+              "label": "token0",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:40"
+            },
+            {
+              "label": "token1",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:41"
+            },
+            {
+              "label": "fee",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_uint24",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:42"
+            },
+            {
+              "label": "tickSpacing",
+              "offset": 23,
+              "slot": "2",
+              "type": "t_int24",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:44"
+            },
+            {
+              "label": "maxLiquidityPerTick",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint128",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:46"
+            },
+            {
+              "label": "slot0",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_struct(Slot0)1669_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:66"
+            },
+            {
+              "label": "feeGrowthGlobal0X128",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:69"
+            },
+            {
+              "label": "feeGrowthGlobal1X128",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:71"
+            },
+            {
+              "label": "protocolFees",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_struct(ProtocolFees)1686_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:79"
+            },
+            {
+              "label": "liquidity",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint128",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:82"
+            },
+            {
+              "label": "ticks",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_int24,t_struct(Info)7234_storage)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:85"
+            },
+            {
+              "label": "tickBitmap",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_int16,t_uint256)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:87"
+            },
+            {
+              "label": "positions",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_bytes32,t_struct(Info)6201_storage)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:89"
+            },
+            {
+              "label": "observations",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_array(t_struct(Observation)5461_storage)65535_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:91"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "65547",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:94"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(Observation)5461_storage)65535_storage": {
+              "label": "struct Oracle.Observation[65535]",
+              "numberOfBytes": "2097120"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_int128": {
+              "label": "int128",
+              "numberOfBytes": "16"
+            },
+            "t_int16": {
+              "label": "int16",
+              "numberOfBytes": "2"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_int56": {
+              "label": "int56",
+              "numberOfBytes": "7"
+            },
+            "t_mapping(t_bytes32,t_struct(Info)6201_storage)": {
+              "label": "mapping(bytes32 => struct Position.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_int16,t_uint256)": {
+              "label": "mapping(int16 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_int24,t_struct(Info)7234_storage)": {
+              "label": "mapping(int24 => struct Tick.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Info)6201_storage": {
+              "label": "struct Position.Info",
+              "members": [
+                {
+                  "label": "liquidity",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthInside0LastX128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthInside1LastX128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tokensOwed0",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "tokensOwed1",
+                  "type": "t_uint128",
+                  "offset": 16,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_struct(Info)7234_storage": {
+              "label": "struct Tick.Info",
+              "members": [
+                {
+                  "label": "liquidityGross",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "liquidityNet",
+                  "type": "t_int128",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthOutside0X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthOutside1X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickCumulativeOutside",
+                  "type": "t_int56",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsPerLiquidityOutsideX128",
+                  "type": "t_uint160",
+                  "offset": 7,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsOutside",
+                  "type": "t_uint32",
+                  "offset": 27,
+                  "slot": "3"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_struct(Observation)5461_storage": {
+              "label": "struct Oracle.Observation",
+              "members": [
+                {
+                  "label": "blockTimestamp",
+                  "type": "t_uint32",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tickCumulative",
+                  "type": "t_int56",
+                  "offset": 4,
+                  "slot": "0"
+                },
+                {
+                  "label": "secondsPerLiquidityCumulativeX128",
+                  "type": "t_uint160",
+                  "offset": 11,
+                  "slot": "0"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_struct(ProtocolFees)1686_storage": {
+              "label": "struct Pool.ProtocolFees",
+              "members": [
+                {
+                  "label": "token0",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "token1",
+                  "type": "t_uint128",
+                  "offset": 16,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_struct(Slot0)1669_storage": {
+              "label": "struct Pool.Slot0",
+              "members": [
+                {
+                  "label": "sqrtPriceX96",
+                  "type": "t_uint160",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tick",
+                  "type": "t_int24",
+                  "offset": 20,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationIndex",
+                  "type": "t_uint16",
+                  "offset": 23,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationCardinality",
+                  "type": "t_uint16",
+                  "offset": 25,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationCardinalityNext",
+                  "type": "t_uint16",
+                  "offset": 27,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeProtocol",
+                  "type": "t_uint8",
+                  "offset": 29,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlocked",
+                  "type": "t_bool",
+                  "offset": 30,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_uint128": {
+              "label": "uint128",
+              "numberOfBytes": "16"
+            },
+            "t_uint16": {
+              "label": "uint16",
+              "numberOfBytes": "2"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint24": {
+              "label": "uint24",
+              "numberOfBytes": "3"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/PoolDeployer.sol:PoolDeployer": {
+        "src": "contracts/PoolDeployer.sol:10",
+        "version": {
+          "withMetadata": "ddd90d6475fbaf2c1e30a5e015df692f5f5bdd2b610a5e97af983b9380d84ec7",
+          "withoutMetadata": "60c0dbaf8879bd12d69328a23f4b7877a8ba673b9a497e3f9dc59ea337775646",
+          "linkedWithoutMetadata": "60c0dbaf8879bd12d69328a23f4b7877a8ba673b9a497e3f9dc59ea337775646"
+        },
+        "inherit": [
+          "contracts/interfaces/IPoolDeployer.sol:IPoolDeployer"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "parameters",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_struct(Parameters)4069_storage",
+              "contract": "PoolDeployer",
+              "src": "contracts/PoolDeployer.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_struct(Parameters)4069_storage": {
+              "label": "struct PoolDeployer.Parameters",
+              "members": [
+                {
+                  "label": "factory",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "token0",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "token1",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "fee",
+                  "type": "t_uint24",
+                  "offset": 20,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickSpacing",
+                  "type": "t_int24",
+                  "offset": 23,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint24": {
+              "label": "uint24",
+              "numberOfBytes": "3"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/IERC20Minimal.sol:IERC20Minimal": {
+        "src": "contracts/interfaces/IERC20Minimal.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/IFactory.sol:IFactory": {
+        "src": "contracts/interfaces/IFactory.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "feeAmountTickSpacing(uint24)",
+          "getPool(address,address,uint24)",
+          "createPool(address,address,uint24)",
+          "setOwner(address)",
+          "enableFeeAmount(uint24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/IPool.sol:IPool": {
+        "src": "contracts/interfaces/IPool.sol:15",
+        "inherit": [
+          "contracts/interfaces/pool/IPoolEvents.sol:IPoolEvents",
+          "contracts/interfaces/pool/IPoolOwnerActions.sol:IPoolOwnerActions",
+          "contracts/interfaces/pool/IPoolActions.sol:IPoolActions",
+          "contracts/interfaces/pool/IPoolDerivedState.sol:IPoolDerivedState",
+          "contracts/interfaces/pool/IPoolState.sol:IPoolState",
+          "contracts/interfaces/pool/IPoolImmutables.sol:IPoolImmutables"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/IPoolDeployer.sol:IPoolDeployer": {
+        "src": "contracts/interfaces/IPoolDeployer.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "parameters()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/callback/IFlashCallback.sol:IFlashCallback": {
+        "src": "contracts/interfaces/callback/IFlashCallback.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "flashCallback(uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/callback/IMintCallback.sol:IMintCallback": {
+        "src": "contracts/interfaces/callback/IMintCallback.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "mintCallback(uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback": {
+        "src": "contracts/interfaces/callback/ISwapCallback.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "swapCallback(int256,int256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolActions.sol:IPoolActions": {
+        "src": "contracts/interfaces/pool/IPoolActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize(uint160)",
+          "mint(address,int24,int24,uint128,bytes)",
+          "collect(address,int24,int24,uint128,uint128)",
+          "burn(int24,int24,uint128)",
+          "swap(address,bool,int256,uint160,bytes)",
+          "flash(address,uint256,uint256,bytes)",
+          "increaseObservationCardinalityNext(uint16)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolDerivedState.sol:IPoolDerivedState": {
+        "src": "contracts/interfaces/pool/IPoolDerivedState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "observe(uint32[])",
+          "snapshotCumulativesInside(int24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolEvents.sol:IPoolEvents": {
+        "src": "contracts/interfaces/pool/IPoolEvents.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolImmutables.sol:IPoolImmutables": {
+        "src": "contracts/interfaces/pool/IPoolImmutables.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "token0()",
+          "token1()",
+          "fee()",
+          "tickSpacing()",
+          "maxLiquidityPerTick()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolOwnerActions.sol:IPoolOwnerActions": {
+        "src": "contracts/interfaces/pool/IPoolOwnerActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setFeeProtocol(uint8,uint8)",
+          "collectProtocol(address,uint128,uint128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/interfaces/pool/IPoolState.sol:IPoolState": {
+        "src": "contracts/interfaces/pool/IPoolState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "slot0()",
+          "feeGrowthGlobal0X128()",
+          "feeGrowthGlobal1X128()",
+          "protocolFees()",
+          "liquidity()",
+          "ticks(int24)",
+          "tickBitmap(int16)",
+          "positions(bytes32)",
+          "observations(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/BitMath.sol:BitMath": {
+        "src": "contracts/libraries/BitMath.sol:6",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/FixedPoint128.sol:FixedPoint128": {
+        "src": "contracts/libraries/FixedPoint128.sol:6",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/FixedPoint96.sol:FixedPoint96": {
+        "src": "contracts/libraries/FixedPoint96.sol:7",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/FullMath.sol:FullMath": {
+        "src": "contracts/libraries/FullMath.sol:7",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/LiquidityMath.sol:LiquidityMath": {
+        "src": "contracts/libraries/LiquidityMath.sol:5",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/LowGasSafeMath.sol:LowGasSafeMath": {
+        "src": "contracts/libraries/LowGasSafeMath.sol:6",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/Oracle.sol:Oracle": {
+        "src": "contracts/libraries/Oracle.sol:11",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/Position.sol:Position": {
+        "src": "contracts/libraries/Position.sol:11",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/FixedPoint128.sol:FixedPoint128",
+          "contracts/libraries/FullMath.sol:FullMath",
+          "contracts/libraries/LiquidityMath.sol:LiquidityMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/SafeCast.sol:SafeCast": {
+        "src": "contracts/libraries/SafeCast.sol:6",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/SqrtPriceMath.sol:SqrtPriceMath": {
+        "src": "contracts/libraries/SqrtPriceMath.sol:13",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/LowGasSafeMath.sol:LowGasSafeMath",
+          "contracts/libraries/SafeCast.sol:SafeCast",
+          "contracts/libraries/FixedPoint96.sol:FixedPoint96",
+          "contracts/libraries/UnsafeMath.sol:UnsafeMath",
+          "contracts/libraries/FullMath.sol:FullMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/SwapMath.sol:SwapMath": {
+        "src": "contracts/libraries/SwapMath.sol:9",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/FullMath.sol:FullMath",
+          "contracts/libraries/SqrtPriceMath.sol:SqrtPriceMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/Tick.sol:Tick": {
+        "src": "contracts/libraries/Tick.sol:12",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/LowGasSafeMath.sol:LowGasSafeMath",
+          "contracts/libraries/SafeCast.sol:SafeCast",
+          "contracts/libraries/LiquidityMath.sol:LiquidityMath",
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/TickBitmap.sol:TickBitmap": {
+        "src": "contracts/libraries/TickBitmap.sol:9",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/BitMath.sol:BitMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/TickMath.sol:TickMath": {
+        "src": "contracts/libraries/TickMath.sol:7",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/TransferHelper.sol:TransferHelper": {
+        "src": "contracts/libraries/TransferHelper.sol:8",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/libraries/UnsafeMath.sol:UnsafeMath": {
+        "src": "contracts/libraries/UnsafeMath.sol:6",
+        "version": {
+          "withMetadata": "fbfa975909662a4405db51d672a4c55fedcd4bdfa5c2983a96d66ad195c1347b",
+          "withoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66",
+          "linkedWithoutMetadata": "003460f82de9b4443b3210511223958735ef1e0acef08c338160fc451f45ca66"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/BitMathEchidnaTest.sol:BitMathEchidnaTest": {
+        "src": "contracts/test/BitMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "f9089c3694176540cac4927339db379ceba29ba3cc54b455bcfb35e5d10d4e9f",
+          "withoutMetadata": "60d0b2e580f7881218e26b23459f88ed8ab5250ba79ca0d3bc6dcbbe12efe172",
+          "linkedWithoutMetadata": "60d0b2e580f7881218e26b23459f88ed8ab5250ba79ca0d3bc6dcbbe12efe172"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/BitMath.sol:BitMath"
+        ],
+        "methods": [
+          "mostSignificantBitInvariant(uint256)",
+          "leastSignificantBitInvariant(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/BitMathTest.sol:BitMathTest": {
+        "src": "contracts/test/BitMathTest.sol:6",
+        "version": {
+          "withMetadata": "349194d95bcfe7a703b07e74b239666c562424d29b2c378672ff8302bd031175",
+          "withoutMetadata": "e6dc7f3bdd758cb54a67714171717f7b7b66394d578608a8c48484ce4e011040",
+          "linkedWithoutMetadata": "e6dc7f3bdd758cb54a67714171717f7b7b66394d578608a8c48484ce4e011040"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/BitMath.sol:BitMath"
+        ],
+        "methods": [
+          "mostSignificantBit(uint256)",
+          "getGasCostOfMostSignificantBit(uint256)",
+          "leastSignificantBit(uint256)",
+          "getGasCostOfLeastSignificantBit(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/FullMathEchidnaTest.sol:FullMathEchidnaTest": {
+        "src": "contracts/test/FullMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "4c977ac1baa276be47acfa01bfd0254a169563c0c429041333529500f769e855",
+          "withoutMetadata": "89addfb9f56798789b01d9bb9afbe2e7d802ce7b15a6e4bc848ba0c2a5f3d4d4",
+          "linkedWithoutMetadata": "89addfb9f56798789b01d9bb9afbe2e7d802ce7b15a6e4bc848ba0c2a5f3d4d4"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/FullMath.sol:FullMath"
+        ],
+        "methods": [
+          "checkMulDivRounding(uint256,uint256,uint256)",
+          "checkMulDiv(uint256,uint256,uint256)",
+          "checkMulDivRoundingUp(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/FullMathTest.sol:FullMathTest": {
+        "src": "contracts/test/FullMathTest.sol:6",
+        "version": {
+          "withMetadata": "42aeb2528f03eb7fd37166f5f246a121fe14ea42157897630dd8c1408e615771",
+          "withoutMetadata": "9c4a0e22aa90f9bd76d06c13ece5cee20b3733300eddeabfd2aab1cb0598093c",
+          "linkedWithoutMetadata": "9c4a0e22aa90f9bd76d06c13ece5cee20b3733300eddeabfd2aab1cb0598093c"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/FullMath.sol:FullMath"
+        ],
+        "methods": [
+          "mulDiv(uint256,uint256,uint256)",
+          "mulDivRoundingUp(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/LiquidityMathTest.sol:LiquidityMathTest": {
+        "src": "contracts/test/LiquidityMathTest.sol:6",
+        "version": {
+          "withMetadata": "6bcfe174196ca9c2662ce0e3443fab8de450bf026a721d52d5ae11925b738b1e",
+          "withoutMetadata": "aae69c46e25c2419cf8aff6d95e23f1207bbbc351592d4d880bbb38324907392",
+          "linkedWithoutMetadata": "aae69c46e25c2419cf8aff6d95e23f1207bbbc351592d4d880bbb38324907392"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/LiquidityMath.sol:LiquidityMath"
+        ],
+        "methods": [
+          "addDelta(uint128,int128)",
+          "getGasCostOfAddDelta(uint128,int128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/LowGasSafeMathEchidnaTest.sol:LowGasSafeMathEchidnaTest": {
+        "src": "contracts/test/LowGasSafeMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "2ab53270b1c6333d6c848503274192a443624641c10c65e3745cf1ca8918f9fe",
+          "withoutMetadata": "92eee989cb961d115be9e4ef830dff363ca68dcfb9c8d34b192577838665ff8e",
+          "linkedWithoutMetadata": "92eee989cb961d115be9e4ef830dff363ca68dcfb9c8d34b192577838665ff8e"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/LowGasSafeMath.sol:LowGasSafeMath"
+        ],
+        "methods": [
+          "checkAdd(uint256,uint256)",
+          "checkSub(uint256,uint256)",
+          "checkMul(uint256,uint256)",
+          "checkAddi(int256,int256)",
+          "checkSubi(int256,int256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/MockTimePool.sol:MockTimePool": {
+        "src": "contracts/test/MockTimePool.sol:7",
+        "version": {
+          "withMetadata": "f22723e21d95fd5785836737041928394bb64edf4dd71ab6267e543b1dedeb2b",
+          "withoutMetadata": "bb280429b0b89dcfeb2c0a58b26e4f68206065ec17fb411c03ebc621ef018322",
+          "linkedWithoutMetadata": "bb280429b0b89dcfeb2c0a58b26e4f68206065ec17fb411c03ebc621ef018322"
+        },
+        "inherit": [
+          "contracts/Pool.sol:Pool",
+          "contracts/interfaces/IPool.sol:IPool",
+          "contracts/interfaces/pool/IPoolEvents.sol:IPoolEvents",
+          "contracts/interfaces/pool/IPoolOwnerActions.sol:IPoolOwnerActions",
+          "contracts/interfaces/pool/IPoolActions.sol:IPoolActions",
+          "contracts/interfaces/pool/IPoolDerivedState.sol:IPoolDerivedState",
+          "contracts/interfaces/pool/IPoolState.sol:IPoolState",
+          "contracts/interfaces/pool/IPoolImmutables.sol:IPoolImmutables",
+          "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "setFeeGrowthGlobal0X128(uint256)",
+          "setFeeGrowthGlobal1X128(uint256)",
+          "advanceTime(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "time",
+            "src": "contracts/test/MockTimePool.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+            },
+            {
+              "label": "factory",
+              "offset": 2,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:39"
+            },
+            {
+              "label": "token0",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:40"
+            },
+            {
+              "label": "token1",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:41"
+            },
+            {
+              "label": "fee",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_uint24",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:42"
+            },
+            {
+              "label": "tickSpacing",
+              "offset": 23,
+              "slot": "2",
+              "type": "t_int24",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:44"
+            },
+            {
+              "label": "maxLiquidityPerTick",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint128",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:46"
+            },
+            {
+              "label": "slot0",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_struct(Slot0)1669_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:66"
+            },
+            {
+              "label": "feeGrowthGlobal0X128",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:69"
+            },
+            {
+              "label": "feeGrowthGlobal1X128",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:71"
+            },
+            {
+              "label": "protocolFees",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_struct(ProtocolFees)1686_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:79"
+            },
+            {
+              "label": "liquidity",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint128",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:82"
+            },
+            {
+              "label": "ticks",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_int24,t_struct(Info)7234_storage)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:85"
+            },
+            {
+              "label": "tickBitmap",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_int16,t_uint256)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:87"
+            },
+            {
+              "label": "positions",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_bytes32,t_struct(Info)6201_storage)",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:89"
+            },
+            {
+              "label": "observations",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_array(t_struct(Observation)5461_storage)65535_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:91"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "65547",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "Pool",
+              "src": "contracts/Pool.sol:94"
+            },
+            {
+              "label": "time",
+              "offset": 0,
+              "slot": "65597",
+              "type": "t_uint256",
+              "contract": "MockTimePool",
+              "src": "contracts/test/MockTimePool.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(Observation)5461_storage)65535_storage": {
+              "label": "struct Oracle.Observation[65535]",
+              "numberOfBytes": "2097120"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_int128": {
+              "label": "int128",
+              "numberOfBytes": "16"
+            },
+            "t_int16": {
+              "label": "int16",
+              "numberOfBytes": "2"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_int56": {
+              "label": "int56",
+              "numberOfBytes": "7"
+            },
+            "t_mapping(t_bytes32,t_struct(Info)6201_storage)": {
+              "label": "mapping(bytes32 => struct Position.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_int16,t_uint256)": {
+              "label": "mapping(int16 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_int24,t_struct(Info)7234_storage)": {
+              "label": "mapping(int24 => struct Tick.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Info)6201_storage": {
+              "label": "struct Position.Info",
+              "members": [
+                {
+                  "label": "liquidity",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthInside0LastX128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthInside1LastX128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tokensOwed0",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "tokensOwed1",
+                  "type": "t_uint128",
+                  "offset": 16,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_struct(Info)7234_storage": {
+              "label": "struct Tick.Info",
+              "members": [
+                {
+                  "label": "liquidityGross",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "liquidityNet",
+                  "type": "t_int128",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthOutside0X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthOutside1X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickCumulativeOutside",
+                  "type": "t_int56",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsPerLiquidityOutsideX128",
+                  "type": "t_uint160",
+                  "offset": 7,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsOutside",
+                  "type": "t_uint32",
+                  "offset": 27,
+                  "slot": "3"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_struct(Observation)5461_storage": {
+              "label": "struct Oracle.Observation",
+              "members": [
+                {
+                  "label": "blockTimestamp",
+                  "type": "t_uint32",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tickCumulative",
+                  "type": "t_int56",
+                  "offset": 4,
+                  "slot": "0"
+                },
+                {
+                  "label": "secondsPerLiquidityCumulativeX128",
+                  "type": "t_uint160",
+                  "offset": 11,
+                  "slot": "0"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_struct(ProtocolFees)1686_storage": {
+              "label": "struct Pool.ProtocolFees",
+              "members": [
+                {
+                  "label": "token0",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "token1",
+                  "type": "t_uint128",
+                  "offset": 16,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_struct(Slot0)1669_storage": {
+              "label": "struct Pool.Slot0",
+              "members": [
+                {
+                  "label": "sqrtPriceX96",
+                  "type": "t_uint160",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tick",
+                  "type": "t_int24",
+                  "offset": 20,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationIndex",
+                  "type": "t_uint16",
+                  "offset": 23,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationCardinality",
+                  "type": "t_uint16",
+                  "offset": 25,
+                  "slot": "0"
+                },
+                {
+                  "label": "observationCardinalityNext",
+                  "type": "t_uint16",
+                  "offset": 27,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeProtocol",
+                  "type": "t_uint8",
+                  "offset": 29,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlocked",
+                  "type": "t_bool",
+                  "offset": 30,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_uint128": {
+              "label": "uint128",
+              "numberOfBytes": "16"
+            },
+            "t_uint16": {
+              "label": "uint16",
+              "numberOfBytes": "2"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint24": {
+              "label": "uint24",
+              "numberOfBytes": "3"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/MockTimePoolDeployer.sol:MockTimePoolDeployer": {
+        "src": "contracts/test/MockTimePoolDeployer.sol:8",
+        "version": {
+          "withMetadata": "00f6921b5c336dd409c0237004ec51725f4e976df4d578812d96c76d64de9f06",
+          "withoutMetadata": "b931b4cfb9c3df3b58d14e2977670a1fe357b78c7ed815f4e998e2de65c75da5",
+          "linkedWithoutMetadata": "b931b4cfb9c3df3b58d14e2977670a1fe357b78c7ed815f4e998e2de65c75da5"
+        },
+        "inherit": [
+          "contracts/interfaces/IPoolDeployer.sol:IPoolDeployer"
+        ],
+        "libraries": [],
+        "methods": [
+          "deploy(address,address,address,uint24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "parameters",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_struct(Parameters)9260_storage",
+              "contract": "MockTimePoolDeployer",
+              "src": "contracts/test/MockTimePoolDeployer.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_struct(Parameters)9260_storage": {
+              "label": "struct MockTimePoolDeployer.Parameters",
+              "members": [
+                {
+                  "label": "factory",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "token0",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "token1",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "fee",
+                  "type": "t_uint24",
+                  "offset": 20,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickSpacing",
+                  "type": "t_int24",
+                  "offset": 23,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint24": {
+              "label": "uint24",
+              "numberOfBytes": "3"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/OracleEchidnaTest.sol:OracleEchidnaTest": {
+        "src": "contracts/test/OracleEchidnaTest.sol:7",
+        "version": {
+          "withMetadata": "b591b3201e13fdfeb88f09f17554eea071906958c3c7a5d0330600098f001d27",
+          "withoutMetadata": "7183490ac9566ae72bc0d4576f05c14e6ad800ec34aa3f01e4b6590047e66f03",
+          "linkedWithoutMetadata": "7183490ac9566ae72bc0d4576f05c14e6ad800ec34aa3f01e4b6590047e66f03"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(uint32,int24,uint128)",
+          "advanceTime(uint32)",
+          "update(uint32,int24,uint128)",
+          "grow(uint16)",
+          "echidna_indexAlwaysLtCardinality()",
+          "echidna_AlwaysInitialized()",
+          "echidna_cardinalityAlwaysLteNext()",
+          "echidna_canAlwaysObserve0IfInitialized()",
+          "checkTwoAdjacentObservationsTickCumulativeModTimeElapsedAlways0(uint16)",
+          "checkTimeWeightedAveragesAlwaysFitsType(uint32)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OracleEchidnaTest",
+            "src": "contracts/test/OracleEchidnaTest.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "oracle",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(OracleTest)10228",
+              "contract": "OracleEchidnaTest",
+              "src": "contracts/test/OracleEchidnaTest.sol:8"
+            },
+            {
+              "label": "initialized",
+              "offset": 20,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "OracleEchidnaTest",
+              "src": "contracts/test/OracleEchidnaTest.sol:10"
+            },
+            {
+              "label": "timePassed",
+              "offset": 21,
+              "slot": "0",
+              "type": "t_uint32",
+              "contract": "OracleEchidnaTest",
+              "src": "contracts/test/OracleEchidnaTest.sol:11"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(OracleTest)10228": {
+              "label": "contract OracleTest",
+              "numberOfBytes": "20"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/OracleTest.sol:OracleTest": {
+        "src": "contracts/test/OracleTest.sol:7",
+        "version": {
+          "withMetadata": "491b86491d8ef06aba68a8f05854ea2111346c957edef9d234b4c07dbe927e45",
+          "withoutMetadata": "b99f878269dc53fe6fa6e0f527abfe3f2073b4b1b93f3a00de7922498940d130",
+          "linkedWithoutMetadata": "b99f878269dc53fe6fa6e0f527abfe3f2073b4b1b93f3a00de7922498940d130"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/Oracle.sol:Oracle"
+        ],
+        "methods": [
+          "initialize((uint32,int24,uint128))",
+          "advanceTime(uint32)",
+          "update((uint32,int24,uint128))",
+          "batchUpdate(struct OracleTest.UpdateParams[])",
+          "grow(uint16)",
+          "observe(uint32[])",
+          "getGasCostOfObserve(uint32[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "observations",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_struct(Observation)5461_storage)65535_storage",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:10"
+            },
+            {
+              "label": "time",
+              "offset": 0,
+              "slot": "65535",
+              "type": "t_uint32",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:12"
+            },
+            {
+              "label": "tick",
+              "offset": 4,
+              "slot": "65535",
+              "type": "t_int24",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:13"
+            },
+            {
+              "label": "liquidity",
+              "offset": 7,
+              "slot": "65535",
+              "type": "t_uint128",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:14"
+            },
+            {
+              "label": "index",
+              "offset": 23,
+              "slot": "65535",
+              "type": "t_uint16",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:15"
+            },
+            {
+              "label": "cardinality",
+              "offset": 25,
+              "slot": "65535",
+              "type": "t_uint16",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:16"
+            },
+            {
+              "label": "cardinalityNext",
+              "offset": 27,
+              "slot": "65535",
+              "type": "t_uint16",
+              "contract": "OracleTest",
+              "src": "contracts/test/OracleTest.sol:17"
+            }
+          ],
+          "types": {
+            "t_array(t_struct(Observation)5461_storage)65535_storage": {
+              "label": "struct Oracle.Observation[65535]",
+              "numberOfBytes": "2097120"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_int56": {
+              "label": "int56",
+              "numberOfBytes": "7"
+            },
+            "t_struct(Observation)5461_storage": {
+              "label": "struct Oracle.Observation",
+              "members": [
+                {
+                  "label": "blockTimestamp",
+                  "type": "t_uint32",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tickCumulative",
+                  "type": "t_int56",
+                  "offset": 4,
+                  "slot": "0"
+                },
+                {
+                  "label": "secondsPerLiquidityCumulativeX128",
+                  "type": "t_uint160",
+                  "offset": 11,
+                  "slot": "0"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_uint128": {
+              "label": "uint128",
+              "numberOfBytes": "16"
+            },
+            "t_uint16": {
+              "label": "uint16",
+              "numberOfBytes": "2"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/PoolSwapTest.sol:PoolSwapTest": {
+        "src": "contracts/test/PoolSwapTest.sol:9",
+        "version": {
+          "withMetadata": "9ae484ba63cc18934ea73e75d0166753aa41d67ebd8843d73c3e73f457f98b81",
+          "withoutMetadata": "89d06a171685038903265ddb1bf84cc8eb665540148ebcefd964dc8b418059cf",
+          "linkedWithoutMetadata": "89d06a171685038903265ddb1bf84cc8eb665540148ebcefd964dc8b418059cf"
+        },
+        "inherit": [
+          "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback"
+        ],
+        "libraries": [],
+        "methods": [
+          "getSwapResult(address,bool,int256,uint160)",
+          "swapCallback(int256,int256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_amount0Delta",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_int256",
+              "contract": "PoolSwapTest",
+              "src": "contracts/test/PoolSwapTest.sol:10"
+            },
+            {
+              "label": "_amount1Delta",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_int256",
+              "contract": "PoolSwapTest",
+              "src": "contracts/test/PoolSwapTest.sol:11"
+            }
+          ],
+          "types": {
+            "t_int256": {
+              "label": "int256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/SqrtPriceMathEchidnaTest.sol:SqrtPriceMathEchidnaTest": {
+        "src": "contracts/test/SqrtPriceMathEchidnaTest.sol:8",
+        "version": {
+          "withMetadata": "4d50615de35bec290463338e59815e989543ce0da9e3003e258c86f1d1d1ab3f",
+          "withoutMetadata": "af87f5000f42c83dfb027be1865cb1260ff831ef057e59619287eede35fc5fdd",
+          "linkedWithoutMetadata": "af87f5000f42c83dfb027be1865cb1260ff831ef057e59619287eede35fc5fdd"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/FullMath.sol:FullMath",
+          "contracts/libraries/SqrtPriceMath.sol:SqrtPriceMath",
+          "contracts/libraries/FixedPoint96.sol:FixedPoint96"
+        ],
+        "methods": [
+          "mulDivRoundingUpInvariants(uint256,uint256,uint256)",
+          "getNextSqrtPriceFromInputInvariants(uint160,uint128,uint256,bool)",
+          "getNextSqrtPriceFromOutputInvariants(uint160,uint128,uint256,bool)",
+          "getNextSqrtPriceFromAmount0RoundingUpInvariants(uint160,uint128,uint256,bool)",
+          "getNextSqrtPriceFromAmount1RoundingDownInvariants(uint160,uint128,uint256,bool)",
+          "getAmount0DeltaInvariants(uint160,uint160,uint128)",
+          "getAmount0DeltaEquivalency(uint160,uint160,uint128,bool)",
+          "getAmount1DeltaInvariants(uint160,uint160,uint128)",
+          "getAmount0DeltaSignedInvariants(uint160,uint160,int128)",
+          "getAmount1DeltaSignedInvariants(uint160,uint160,int128)",
+          "getOutOfRangeMintInvariants(uint160,uint160,int128)",
+          "getInRangeMintInvariants(uint160,uint160,uint160,int128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/SqrtPriceMathTest.sol:SqrtPriceMathTest": {
+        "src": "contracts/test/SqrtPriceMathTest.sol:6",
+        "version": {
+          "withMetadata": "abb6f77a11b25ca35ba80bb111b6d5cffdcd0772934c54bcad748a80c0236763",
+          "withoutMetadata": "8c80422efe290ebd0ebf01bacfb9ef6e015fbe2718f064558a620a1a0c315408",
+          "linkedWithoutMetadata": "8c80422efe290ebd0ebf01bacfb9ef6e015fbe2718f064558a620a1a0c315408"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/SqrtPriceMath.sol:SqrtPriceMath"
+        ],
+        "methods": [
+          "getNextSqrtPriceFromInput(uint160,uint128,uint256,bool)",
+          "getGasCostOfGetNextSqrtPriceFromInput(uint160,uint128,uint256,bool)",
+          "getNextSqrtPriceFromOutput(uint160,uint128,uint256,bool)",
+          "getGasCostOfGetNextSqrtPriceFromOutput(uint160,uint128,uint256,bool)",
+          "getAmount0Delta(uint160,uint160,uint128,bool)",
+          "getAmount1Delta(uint160,uint160,uint128,bool)",
+          "getGasCostOfGetAmount0Delta(uint160,uint160,uint128,bool)",
+          "getGasCostOfGetAmount1Delta(uint160,uint160,uint128,bool)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/SwapMathEchidnaTest.sol:SwapMathEchidnaTest": {
+        "src": "contracts/test/SwapMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "add3ccd705cd8684bdb0972e7431396177fc50ba8f66628132b1669edf4427f1",
+          "withoutMetadata": "82712c4000566b3250ed1fe40b616e471a28781ebe51204918f20e0e8f875ee0",
+          "linkedWithoutMetadata": "82712c4000566b3250ed1fe40b616e471a28781ebe51204918f20e0e8f875ee0"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/SwapMath.sol:SwapMath"
+        ],
+        "methods": [
+          "checkComputeSwapStepInvariants(uint160,uint160,uint128,int256,uint24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/SwapMathTest.sol:SwapMathTest": {
+        "src": "contracts/test/SwapMathTest.sol:6",
+        "version": {
+          "withMetadata": "74fb3bed84c056acce8078f2055e3a829500c40a41a16157a9d89c14dadacdf2",
+          "withoutMetadata": "0d84f8f0329eae5c602a4d6e8ce17507dffdc580ba8a345ffb6c13e7f1ccac2f",
+          "linkedWithoutMetadata": "0d84f8f0329eae5c602a4d6e8ce17507dffdc580ba8a345ffb6c13e7f1ccac2f"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/SwapMath.sol:SwapMath"
+        ],
+        "methods": [
+          "computeSwapStep(uint160,uint160,uint128,int256,uint24)",
+          "getGasCostOfComputeSwapStep(uint160,uint160,uint128,int256,uint24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TestCallee.sol:TestCallee": {
+        "src": "contracts/test/TestCallee.sol:15",
+        "version": {
+          "withMetadata": "e4014e83aa4ea554c83621d392bc6778322720fe842d9ee1b8b43f17fc40bab7",
+          "withoutMetadata": "ade8b5d1cf125c69da21b0f21fa06f69d1b0174f97a963d0af42e4e2e4449437",
+          "linkedWithoutMetadata": "ade8b5d1cf125c69da21b0f21fa06f69d1b0174f97a963d0af42e4e2e4449437"
+        },
+        "inherit": [
+          "contracts/interfaces/callback/IFlashCallback.sol:IFlashCallback",
+          "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback",
+          "contracts/interfaces/callback/IMintCallback.sol:IMintCallback"
+        ],
+        "libraries": [
+          "contracts/libraries/SafeCast.sol:SafeCast"
+        ],
+        "methods": [
+          "swapExact0For1(address,uint256,address,uint160)",
+          "swap0ForExact1(address,uint256,address,uint160)",
+          "swapExact1For0(address,uint256,address,uint160)",
+          "swap1ForExact0(address,uint256,address,uint160)",
+          "swapToLowerSqrtPrice(address,uint160,address)",
+          "swapToHigherSqrtPrice(address,uint160,address)",
+          "swapCallback(int256,int256,bytes)",
+          "mint(address,address,int24,int24,uint128)",
+          "mintCallback(uint256,uint256,bytes)",
+          "flash(address,address,uint256,uint256,uint256,uint256)",
+          "flashCallback(uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TestERC20.sol:TestERC20": {
+        "src": "contracts/test/TestERC20.sol:6",
+        "version": {
+          "withMetadata": "bac76dda6506f9f652665e44546d6d88818395a1d9e768c5dcf343354e2948b5",
+          "withoutMetadata": "e1e9465bc7d18e5385d50afa7750ff7806eb74e86d151aa9d3eea988307c2d81",
+          "linkedWithoutMetadata": "e1e9465bc7d18e5385d50afa7750ff7806eb74e86d151aa9d3eea988307c2d81"
+        },
+        "inherit": [
+          "contracts/interfaces/IERC20Minimal.sol:IERC20Minimal"
+        ],
+        "libraries": [],
+        "methods": [
+          "(uint256)",
+          "mint(address,uint256)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TestERC20",
+            "src": "contracts/test/TestERC20.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "balanceOf",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "TestERC20",
+              "src": "contracts/test/TestERC20.sol:7"
+            },
+            {
+              "label": "allowance",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "TestERC20",
+              "src": "contracts/test/TestERC20.sol:8"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TestReentrantCallee.sol:TestReentrantCallee": {
+        "src": "contracts/test/TestReentrantCallee.sol:10",
+        "version": {
+          "withMetadata": "48932b062e564fa3e524d9b36508fcc31cbaaa3e7090b267cfac8673560e2ebf",
+          "withoutMetadata": "b4fb05550e00d1b5ff082e99be637e3be4aae119729b8bdd1fd2a2908ec9c34d",
+          "linkedWithoutMetadata": "b4fb05550e00d1b5ff082e99be637e3be4aae119729b8bdd1fd2a2908ec9c34d"
+        },
+        "inherit": [
+          "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback"
+        ],
+        "libraries": [
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [
+          "swapToReenter(address)",
+          "swapCallback(int256,int256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TestRouter.sol:TestRouter": {
+        "src": "contracts/test/TestRouter.sol:11",
+        "version": {
+          "withMetadata": "d137f193ad3509bb17bac3acd0f193a545aa3dd1ea373d409c07b414b96aa407",
+          "withoutMetadata": "4df0e9d1a9ad52ecab50735eb7802170330c55eee1b1351d920a483818b6389f",
+          "linkedWithoutMetadata": "4df0e9d1a9ad52ecab50735eb7802170330c55eee1b1351d920a483818b6389f"
+        },
+        "inherit": [
+          "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback"
+        ],
+        "libraries": [
+          "contracts/libraries/SafeCast.sol:SafeCast",
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [
+          "swapForExact0Multi(address,address,address,uint256)",
+          "swapForExact1Multi(address,address,address,uint256)",
+          "swapCallback(int256,int256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TestSwapPay.sol:TestSwapPay": {
+        "src": "contracts/test/TestSwapPay.sol:9",
+        "version": {
+          "withMetadata": "bb9840af793e63023084295be556466fc42451a01a919e05cf87f1fce20401bb",
+          "withoutMetadata": "a30bc80fe3e086af45368bd2f146ecd70b58521be3393b8c23fdeda9286d239f",
+          "linkedWithoutMetadata": "a30bc80fe3e086af45368bd2f146ecd70b58521be3393b8c23fdeda9286d239f"
+        },
+        "inherit": [
+          "contracts/interfaces/callback/ISwapCallback.sol:ISwapCallback"
+        ],
+        "libraries": [],
+        "methods": [
+          "swap(address,address,bool,uint160,int256,uint256,uint256)",
+          "swapCallback(int256,int256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickBitmapEchidnaTest.sol:TickBitmapEchidnaTest": {
+        "src": "contracts/test/TickBitmapEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "8c6aeed795606aea920c39219e283c262e457748aea024ce6a70dfdaa96c3677",
+          "withoutMetadata": "1c06025e440ac69ea70fccd2fedf6863d9f2d60a89597bce14b91e3050417d54",
+          "linkedWithoutMetadata": "1c06025e440ac69ea70fccd2fedf6863d9f2d60a89597bce14b91e3050417d54"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/TickBitmap.sol:TickBitmap"
+        ],
+        "methods": [
+          "flipTick(int24)",
+          "checkNextInitializedTickWithinOneWordInvariants(int24,bool)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "bitmap",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_int16,t_uint256)",
+              "contract": "TickBitmapEchidnaTest",
+              "src": "contracts/test/TickBitmapEchidnaTest.sol:9"
+            }
+          ],
+          "types": {
+            "t_int16": {
+              "label": "int16",
+              "numberOfBytes": "2"
+            },
+            "t_mapping(t_int16,t_uint256)": {
+              "label": "mapping(int16 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickBitmapTest.sol:TickBitmapTest": {
+        "src": "contracts/test/TickBitmapTest.sol:6",
+        "version": {
+          "withMetadata": "4bf197171f0ee6ee8910b3d0c6039896bffde204c3b2988642e7684a0192a48f",
+          "withoutMetadata": "81b72bac7c4f135f6b2dda2b6b33129ba378489bd5adae730a85c6c3835c08f4",
+          "linkedWithoutMetadata": "81b72bac7c4f135f6b2dda2b6b33129ba378489bd5adae730a85c6c3835c08f4"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/TickBitmap.sol:TickBitmap"
+        ],
+        "methods": [
+          "flipTick(int24)",
+          "getGasCostOfFlipTick(int24)",
+          "nextInitializedTickWithinOneWord(int24,bool)",
+          "getGasCostOfNextInitializedTickWithinOneWord(int24,bool)",
+          "isInitialized(int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "bitmap",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_int16,t_uint256)",
+              "contract": "TickBitmapTest",
+              "src": "contracts/test/TickBitmapTest.sol:9"
+            }
+          ],
+          "types": {
+            "t_int16": {
+              "label": "int16",
+              "numberOfBytes": "2"
+            },
+            "t_mapping(t_int16,t_uint256)": {
+              "label": "mapping(int16 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickEchidnaTest.sol:TickEchidnaTest": {
+        "src": "contracts/test/TickEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "65361805865fcf17c67da85636f6ed2797e5bc569a0903d694069e150e986acf",
+          "withoutMetadata": "95bd169f5c92f692b739d7f0e5e7722cfd8ebf1a1fe05640e8872e3617d6cd89",
+          "linkedWithoutMetadata": "95bd169f5c92f692b739d7f0e5e7722cfd8ebf1a1fe05640e8872e3617d6cd89"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/Tick.sol:Tick",
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [
+          "checkTickSpacingToParametersInvariants(int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickMathEchidnaTest.sol:TickMathEchidnaTest": {
+        "src": "contracts/test/TickMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "6ee2881e506a8327373520594fd372b26c4e0000ca6fc73ce6eda3504807f72f",
+          "withoutMetadata": "d290a8f4f80628b09be94de0ac90728a67919291e0585b7a04e4321a8e924898",
+          "linkedWithoutMetadata": "d290a8f4f80628b09be94de0ac90728a67919291e0585b7a04e4321a8e924898"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [
+          "checkGetSqrtRatioAtTickInvariants(int24)",
+          "checkGetTickAtSqrtRatioInvariants(uint160)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickMathTest.sol:TickMathTest": {
+        "src": "contracts/test/TickMathTest.sol:6",
+        "version": {
+          "withMetadata": "3a7cf4c1fb47ea00ea7fd9f32edc0772f0b4d4a3d8ad775e71b3e9161409979d",
+          "withoutMetadata": "7f53a536e517f00e0ce0e5f65c93e20733e79fa22e635b524c7f7ce58cdf797d",
+          "linkedWithoutMetadata": "7f53a536e517f00e0ce0e5f65c93e20733e79fa22e635b524c7f7ce58cdf797d"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/TickMath.sol:TickMath"
+        ],
+        "methods": [
+          "getSqrtRatioAtTick(int24)",
+          "getGasCostOfGetSqrtRatioAtTick(int24)",
+          "getTickAtSqrtRatio(uint160)",
+          "getGasCostOfGetTickAtSqrtRatio(uint160)",
+          "MIN_SQRT_RATIO()",
+          "MAX_SQRT_RATIO()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickOverflowSafetyEchidnaTest.sol:TickOverflowSafetyEchidnaTest": {
+        "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "181414ef0022f83a95267d4c4216852e0f24d58aeaeb3474415d313dfb308b52",
+          "withoutMetadata": "1e7688be232cd041ea039c9e0c35e7a14c1d186326573f1a2b6cb8cbbad5c199",
+          "linkedWithoutMetadata": "1e7688be232cd041ea039c9e0c35e7a14c1d186326573f1a2b6cb8cbbad5c199"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/Tick.sol:Tick"
+        ],
+        "methods": [
+          "increaseFeeGrowthGlobal0X128(uint256)",
+          "increaseFeeGrowthGlobal1X128(uint256)",
+          "setPosition(int24,int24,int128)",
+          "moveToTick(int24)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "tick",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:14"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalLiquidity",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "feeGrowthGlobal0X128",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:19"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "feeGrowthGlobal1X128",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:20"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalGrowth0",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:22"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalGrowth1",
+            "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:23"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "ticks",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_int24,t_struct(Info)7234_storage)",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:13"
+            },
+            {
+              "label": "tick",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_int24",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:14"
+            },
+            {
+              "label": "totalLiquidity",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_int256",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:17"
+            },
+            {
+              "label": "feeGrowthGlobal0X128",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:19"
+            },
+            {
+              "label": "feeGrowthGlobal1X128",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:20"
+            },
+            {
+              "label": "totalGrowth0",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:22"
+            },
+            {
+              "label": "totalGrowth1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "TickOverflowSafetyEchidnaTest",
+              "src": "contracts/test/TickOverflowSafetyEchidnaTest.sol:23"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_int128": {
+              "label": "int128",
+              "numberOfBytes": "16"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_int256": {
+              "label": "int256",
+              "numberOfBytes": "32"
+            },
+            "t_int56": {
+              "label": "int56",
+              "numberOfBytes": "7"
+            },
+            "t_mapping(t_int24,t_struct(Info)7234_storage)": {
+              "label": "mapping(int24 => struct Tick.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Info)7234_storage": {
+              "label": "struct Tick.Info",
+              "members": [
+                {
+                  "label": "liquidityGross",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "liquidityNet",
+                  "type": "t_int128",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthOutside0X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthOutside1X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickCumulativeOutside",
+                  "type": "t_int56",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsPerLiquidityOutsideX128",
+                  "type": "t_uint160",
+                  "offset": 7,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsOutside",
+                  "type": "t_uint32",
+                  "offset": 27,
+                  "slot": "3"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_uint128": {
+              "label": "uint128",
+              "numberOfBytes": "16"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/TickTest.sol:TickTest": {
+        "src": "contracts/test/TickTest.sol:7",
+        "version": {
+          "withMetadata": "c35c2926ab5333aab737ace605dd1c901471dcdcb687c3cb7ff4e346f29cd2e2",
+          "withoutMetadata": "2f6c12192f53904c5780892d2ee2ba8733503f82fef84457afeb4d43e633734c",
+          "linkedWithoutMetadata": "2f6c12192f53904c5780892d2ee2ba8733503f82fef84457afeb4d43e633734c"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/Tick.sol:Tick"
+        ],
+        "methods": [
+          "tickSpacingToMaxLiquidityPerTick(int24)",
+          "setTick(int24,(uint128,int128,uint256,uint256,int56,uint160,uint32,bool))",
+          "getFeeGrowthInside(int24,int24,int24,uint256,uint256)",
+          "update(int24,int24,int128,uint256,uint256,uint160,int56,uint32,bool,uint128)",
+          "clear(int24)",
+          "cross(int24,uint256,uint256,uint160,int56,uint32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "ticks",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_int24,t_struct(Info)7234_storage)",
+              "contract": "TickTest",
+              "src": "contracts/test/TickTest.sol:10"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_int128": {
+              "label": "int128",
+              "numberOfBytes": "16"
+            },
+            "t_int24": {
+              "label": "int24",
+              "numberOfBytes": "3"
+            },
+            "t_int56": {
+              "label": "int56",
+              "numberOfBytes": "7"
+            },
+            "t_mapping(t_int24,t_struct(Info)7234_storage)": {
+              "label": "mapping(int24 => struct Tick.Info)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Info)7234_storage": {
+              "label": "struct Tick.Info",
+              "members": [
+                {
+                  "label": "liquidityGross",
+                  "type": "t_uint128",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "liquidityNet",
+                  "type": "t_int128",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "feeGrowthOutside0X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "feeGrowthOutside1X128",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "tickCumulativeOutside",
+                  "type": "t_int56",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsPerLiquidityOutsideX128",
+                  "type": "t_uint160",
+                  "offset": 7,
+                  "slot": "3"
+                },
+                {
+                  "label": "secondsOutside",
+                  "type": "t_uint32",
+                  "offset": 27,
+                  "slot": "3"
+                },
+                {
+                  "label": "initialized",
+                  "type": "t_bool",
+                  "offset": 31,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_uint128": {
+              "label": "uint128",
+              "numberOfBytes": "16"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/UnsafeMathEchidnaTest.sol:UnsafeMathEchidnaTest": {
+        "src": "contracts/test/UnsafeMathEchidnaTest.sol:6",
+        "version": {
+          "withMetadata": "4bddd6b389b79613dfefacb86a5d8759678c291d6cf588888a8c6cf96ed1e693",
+          "withoutMetadata": "f529bd9331ff798629b01415d86f9c67ce0f938e7a21b7c1ab959c03e157c410",
+          "linkedWithoutMetadata": "f529bd9331ff798629b01415d86f9c67ce0f938e7a21b7c1ab959c03e157c410"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/libraries/UnsafeMath.sol:UnsafeMath"
+        ],
+        "methods": [
+          "checkDivRoundingUp(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      }
+    },
+    {
+      "contracts/NoDelegateCall.sol:NoDelegateCall": {
+        "src": "contracts/NoDelegateCall.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "NoDelegateCall",
+            "src": "contracts/NoDelegateCall.sol:10"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "original",
+            "src": "contracts/NoDelegateCall.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      },
+      "contracts/test/NoDelegateCallTest.sol:NoDelegateCallTest": {
+        "src": "contracts/test/NoDelegateCallTest.sol:6",
+        "version": {
+          "withMetadata": "159fbf7f5ea1871294f4ea009007730f8cba576e1e4e7e505d1f2683896afbf4",
+          "withoutMetadata": "4611b4f33fafcd2deb13c02d852273300aa6fb6e7911d313a44eaebdf83b2929",
+          "linkedWithoutMetadata": "4611b4f33fafcd2deb13c02d852273300aa6fb6e7911d313a44eaebdf83b2929"
+        },
+        "inherit": [
+          "contracts/NoDelegateCall.sol:NoDelegateCall"
+        ],
+        "libraries": [],
+        "methods": [
+          "canBeDelegateCalled()",
+          "cannotBeDelegateCalled()",
+          "getGasCostOfCanBeDelegateCalled()",
+          "getGasCostOfCannotBeDelegateCalled()",
+          "callsIntoNoDelegateCallFunction()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.7.6"
+      }
+    }
+  ]
+}
