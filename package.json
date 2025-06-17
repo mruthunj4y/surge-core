@@ -1,19 +1,19 @@
 {
-  "name": "@syv-labs/surge-core",
-  "description": "🦄 Core smart contracts of Syv labs",
+  "name": "@surge/surge-core",
+  "description": "Core smart contracts of Syv labs",
   "license": "BUSL-1.1",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.0.1",
-  "homepage": "https://syv-labs.org",
+  "homepage": "https://surge.syvlabs.io",
   "keywords": [
     "syv-labs",
     "surge-core"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/syv-labs/surge-core"
+    "url": "https://github.com/mruthunj4y/surge-core"
   },
   "files": [
     "contracts/interfaces",
